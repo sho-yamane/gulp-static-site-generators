@@ -89,7 +89,6 @@ gulp.task('bs-reload', () => {
 //command
 gulp.task('default', ['sass', 'scripts', 'optimizeImage', 'pug'], () => {});
 
-//watch
 gulp.task('watch', () => {
   gulp.watch('./pug/**/*.pug', ['pug']);
   gulp.watch('./js/*', ['scripts']);
@@ -97,5 +96,4 @@ gulp.task('watch', () => {
   gulp.watch('./scss/*.scss', ['sass']);
 });
 
-//browser-sync + watch
 gulp.task('watch-bs', ['browser-sync', 'watch', 'sass', 'scripts', 'optimizeImage', 'pug'], () => {});
