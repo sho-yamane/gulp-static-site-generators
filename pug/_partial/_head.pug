@@ -1,0 +1,9 @@
+meta(charset="utf-8")
+title #{pageTitle}
+meta(name="keywords" content=`${pageKeywords}`)
+meta(name="description" content=`${pageDescription}`)
+if thisPage === "index"
+  link(href="css/style.min.css" rel="stylesheet" type="text/css")
+else
+  link(href="../css/style.min.css" rel="stylesheet" type="text/css")
+script(type="text/javascript" src="js/bundle.min.js")
