@@ -30,6 +30,10 @@ const browserSyncOptions = {
     index: 'index.html'
   }
 };
+const scriptsFile = [
+  // js file here!!
+  './js/app.js'
+];
 
 // task
 gulp.task('sass', () => {
@@ -44,17 +48,12 @@ gulp.task('sass', () => {
 });
 
 gulp.task('scripts', () => {
-  const scripts = [
-    // js file
-    './js/app.js'
-  ];
-  gulp.src(scripts)
+  gulp.src(scriptsFile)
     .pipe(plumber({errorHandler: notify.onError('<%= error.message %>')}))
     .pipe(concat('bundle.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('./dist/js'));
-
-  gulp.src(scripts)
+  gulp.src(scriptsFile)
     .pipe(plumber({errorHandler: notify.onError('<%= error.message %>')}))
     .pipe(concat('bundle.js'))
     .pipe(gulp.dest('./dist/js'));
