@@ -5,7 +5,7 @@
 - pug - pugフォルダと同じディレクトリ構造でpugファイルをdistフォルダ内にhtmlファイルに変換
 - js - gulpfile内で指定したファイルを一つのjsファイルにまとめてminifyしています。
 - img - 画像ファイルをminifyしてdistフォルダ内に出力
-- scss - scssをベンダープレフィックスしてcssにコンパイルしてdistのフォルダ内に出力
+- scss - scssをベンダープレフィックスしてcssにコンパイルしてminify後、distのフォルダ内に出力
 
 ## コマンド
 
