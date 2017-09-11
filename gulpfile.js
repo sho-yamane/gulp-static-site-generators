@@ -21,7 +21,7 @@ const imagePath = {
 const browserSyncWatchFiles = [
   './dist/css/*.css',
   './dist/js/*.js',
-  './images/*',
+  './img/*',
   './**/*.html'
 ];
 const browserSyncOptions = {
